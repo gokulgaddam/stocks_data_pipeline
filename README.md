@@ -30,11 +30,12 @@ This project builds a production-ready stock market data pipeline that extracts 
 
 ✅ Daily stock ingestion with Airflow  
 ✅ Incremental & partitioned dbt models  
-✅ Historical ticker snapshots with `dbt snapshot`  
+✅ Historical ticker snapshots with `dbt snapshot`  (SCD2)
 ✅ Aggregated marts for dashboarding:  
 &nbsp;&nbsp;&nbsp;&nbsp;• Market Summary  
 &nbsp;&nbsp;&nbsp;&nbsp;• Daily Metrics  
 &nbsp;&nbsp;&nbsp;&nbsp;• Gainers/Losers  
+&nbsp;&nbsp;&nbsp;&nbsp;• 7D Metrics
 ✅ Cosmos-managed `DbtTaskGroup`  
 ✅ Modular code + reusable pipeline
 
@@ -44,7 +45,7 @@ This project builds a production-ready stock market data pipeline that extracts 
 
 This is how the pipeline orchestrates daily tasks using Airflow:
 
-![stocks_daily_dag_graph](images/stocks_daily_dag_graph.png)
+![stocks_daily_dag_graph](images/dag_airflow.png)
 
 > `load_prices` and `load_tickers_snapshot` pull data →  
 > `dbt_run_marts` transforms raw data to marts via dbt  
