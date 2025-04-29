@@ -45,7 +45,7 @@ This project builds a production-ready stock market data pipeline that extracts 
 
 This is how the pipeline orchestrates daily tasks using Airflow:
 
-![stocks_daily_dag_graph](images/dag_airflow.png)
+![stocks_daily_dag_graph](dag_airflow.png)
 
 > `load_prices` and `load_tickers_snapshot` pull data →  
 > `dbt_run_marts` transforms raw data to marts via dbt  
