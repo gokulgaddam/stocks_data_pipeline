@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: stocks_agg_table
+    description: "Staging table combining raw stock prices and ticker metadata."
+    columns:
+      - name: symbol
+        description: "Ticker symbol of the stock."
+        tests:
+          - not_null
+
+      - name: close_price
+        description: "Closing price of the stock for the given timestamp."
+
+      - name: high_price
+        description: "Highest price of the stock during the time window."
+
+      - name: low_price
+        description: "Lowest price of the stock during the time window."
+
+      - name: open_price
+        description: "Opening price of the stock during the time window."
+
+      - name: volume
+        description: "Volume traded during the time window."
+
+      - name: vwap
+        description: "Volume-weighted average price."
+
+      - name: trade_count
+        description: "Number of trades in the time window."
+
+      - name: raw_timestamp
+        description: "Raw timestamp from the API (milliseconds)."
+
+      - name: trade_date
+        description: "Converted timestamp used for event tracking and partitioning."
+        tests:
+          - not_null
+
+      - name: ingestion_date
+        description: "Timestamp when the data was ingested into the system."
+        tests:
+          - not_null
+
+      - name: company_name
+        description: "Full name of the company."
+
+      - name: market
+        description: "Market in which the stock is traded."
+
+      - name: exchange
+        description: "Primary exchange of the stock."
+
+      - name: is_active
+        description: "Indicates whether the stock is currently active."
+
+      - name: security_type
+        description: "Type of the security (e.g., common stock, ETF)."

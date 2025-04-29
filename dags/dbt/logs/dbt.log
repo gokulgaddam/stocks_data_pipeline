@@ -1,0 +1,60 @@
+[0m15:04:25.687388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A6820FB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A663D9DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A663DAF80>]}
+
+
+============================== 15:04:25.690387 | a8e9bdd2-3ff8-45cc-b4c7-b9d24ccbbdc5 ==============================
+[0m15:04:25.690387 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:04:25.691890 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\gokul\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:33.722860 [debug] [MainThread]: Starter project path: C:\DataEnggProject\airflow_dbt_stocks\airflow_dbt\dags\dbt\.venv\lib\site-packages\dbt\include\starter_project
+[0m15:04:33.776080 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:04:33.777113 [info ] [MainThread]: Setting up your profile.
+[0m15:07:02.617732 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\gokul\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:07:02.619308 [debug] [MainThread]: Command `dbt init` succeeded at 15:07:02.618783 after 157.01 seconds
+[0m15:07:02.619832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A6820FB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A663DB0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A693787C0>]}
+[0m15:07:02.620354 [debug] [MainThread]: Flushing usage events
+[0m15:07:03.015928 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:07:13.726662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D488FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D3A29BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D3A2B490>]}
+
+
+============================== 15:07:13.730664 | 49a52d70-e2ab-4e44-a019-e9fe514479f6 ==============================
+[0m15:07:13.730664 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:07:13.731663 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\gokul\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:07:13.748661 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:07:13.749661 [info ] [MainThread]: python version: 3.10.7
+[0m15:07:13.750661 [info ] [MainThread]: python path: C:\DataEnggProject\airflow_dbt_stocks\airflow_dbt\dags\dbt\.venv\Scripts\python.exe
+[0m15:07:13.751663 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m15:07:14.011962 [info ] [MainThread]: Using profiles dir at C:\Users\gokul\.dbt
+[0m15:07:14.012962 [info ] [MainThread]: Using profiles.yml file at C:\Users\gokul\.dbt\profiles.yml
+[0m15:07:14.013962 [info ] [MainThread]: Using dbt_project.yml file at C:\DataEnggProject\airflow_dbt_stocks\airflow_dbt\dags\dbt\dbt_project.yml
+[0m15:07:14.014965 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m15:07:14.015961 [debug] [MainThread]: Command `dbt debug` failed at 15:07:14.015961 after 0.38 seconds
+[0m15:07:14.015961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D488FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D3A2A470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D3A2B8E0>]}
+[0m15:07:14.016962 [debug] [MainThread]: Flushing usage events
+[0m15:07:14.201838 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:07:37.654377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A2601BB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A241E7E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A241E52A0>]}
+
+
+============================== 15:07:37.657379 | 634abaa3-6b21-4a74-a380-0a90b51715bb ==============================
+[0m15:07:37.657379 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:07:37.658379 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\gokul\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:07:44.190496 [info ] [MainThread]: A project called dbt_stocks already exists here.
+[0m15:07:44.191489 [debug] [MainThread]: Command `dbt init` succeeded at 15:07:44.191489 after 6.61 seconds
+[0m15:07:44.192487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A2601BB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A271676D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A241E52A0>]}
+[0m15:07:44.192487 [debug] [MainThread]: Flushing usage events
+[0m15:07:44.451439 [debug] [MainThread]: An error was encountered while trying to flush usage events
