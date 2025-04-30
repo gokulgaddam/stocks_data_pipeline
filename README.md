@@ -55,6 +55,3 @@ This is how the pipeline orchestrates daily tasks using Airflow:
 
 ---
 
-## 🗃️ Folder Structure
-
->>>>>>> 9872638a7715fc4f4fbee1a581148a27d1fd0ed4
