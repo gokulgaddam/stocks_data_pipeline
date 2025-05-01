@@ -14,6 +14,7 @@ from cosmos import (
 )
 
 from include.req_scripts.load_daily_stocks_snowflake   import load_snowflake
+#from airflow_dbt.streamlit_dashboard 
 from include.req_scripts.load_tickers_to_snowflake     import load_snowflake_tickers
 
 
@@ -41,7 +42,7 @@ default_args = {
     dag_id            = "stocks_daily_dag_dbt",
     start_date        = datetime(2025, 4, 9),
     schedule_interval = '0 22 * * *',
-    catchup           = False,
+    catchup           = True,
     max_active_runs   = 1,
     default_args      = default_args,
     tags              = ["stocks", "dbt", "snowflake"],
